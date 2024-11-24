@@ -1,0 +1,10 @@
+# Include base requirements from requirements.txt
+-r requirements.txt
+
+# Development-specific dependencies
+attrs                  # For class attributes
+pytest>=8.3.3          # Testing framework
+black                  # Code formatter
+pytest-cov             # For test coverage reports
+isort                  # For sorting imports
+pre-commit             # To manage pre-commit hooks

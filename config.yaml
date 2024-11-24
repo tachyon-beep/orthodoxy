@@ -1,0 +1,32 @@
+---
+# Version information
+version: "1.0.0"
+
+# File handling settings
+max_file_size_mb: 200
+buffer_size: 16384
+
+# Schema settings
+default_schema:
+  - name
+  - type
+  - colors
+  - colorIdentity
+  - convertedManaCost
+  - availability
+  - text
+  - edhrecSaltiness
+  - language
+  - foreignData
+
+# Filter settings
+valid_operators:
+  - eq
+  - contains
+  - gt
+  - lt
+
+# Logging settings
+log_file: card_filter.log
+log_format: "%(asctime)s - %(levelname)s - %(message)s"
+log_level: INFO

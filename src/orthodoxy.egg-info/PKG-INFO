@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: orthodoxy
+Version: 0.1.0
+Summary: Card deck management system
+Requires-Python: >=3.12
+License-File: LICENSE
+Requires-Dist: ijson>=3.3.0
+Requires-Dist: tqdm>=4.67.0
+Requires-Dist: pydantic>=2.10.1
+Requires-Dist: structlog>=24.4.0
+Requires-Dist: typing-extensions>=4.12.2
+Requires-Dist: pytest>=8.3.3
+Requires-Dist: click>=8.1.7
+Requires-Dist: pyyaml>=6.0.2

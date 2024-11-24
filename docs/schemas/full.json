@@ -1,0 +1,331 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "meta": {
+            "type": "object",
+            "properties": {
+                "date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "version": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "date",
+                "version"
+            ],
+            "additionalProperties": false
+        },
+        "data": {
+            "type": "object",
+            "patternProperties": {
+                ".*": {
+                    "type": "object",
+                    "properties": {
+                        "block": {
+                            "type": "string"
+                        },
+                        "cards": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "artistIds": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "availability": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "boosterTypes": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "borderColor": {
+                                        "type": "string"
+                                    },
+                                    "colorIdentity": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "colors": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "convertedManaCost": {
+                                        "type": "number"
+                                    },
+                                    "edhrecRank": {
+                                        "type": "integer"
+                                    },
+                                    "edhrecSaltiness": {
+                                        "type": "number"
+                                    },
+                                    "finishes": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "flavorText": {
+                                        "type": "string"
+                                    },
+                                    "frameVersion": {
+                                        "type": "string"
+                                    },
+                                    "hasFoil": {
+                                        "type": "boolean"
+                                    },
+                                    "hasNonFoil": {
+                                        "type": "boolean"
+                                    },
+                                    "identifiers": {
+                                        "type": "object",
+                                        "properties": {
+                                            "cardKingdomFoilId": {
+                                                "type": "string"
+                                            },
+                                            "cardKingdomId": {
+                                                "type": "string"
+                                            },
+                                            "cardsphereFoilId": {
+                                                "type": "string"
+                                            },
+                                            "cardsphereId": {
+                                                "type": "string"
+                                            },
+                                            "mcmId": {
+                                                "type": "string"
+                                            },
+                                            "mcmMetaId": {
+                                                "type": "string"
+                                            },
+                                            "mtgArenaId": {
+                                                "type": "string"
+                                            },
+                                            "mtgjsonV4Id": {
+                                                "type": "string"
+                                            },
+                                            "mtgoId": {
+                                                "type": "string"
+                                            },
+                                            "multiverseId": {
+                                                "type": "string"
+                                            },
+                                            "scryfallCardBackId": {
+                                                "type": "string"
+                                            },
+                                            "scryfallId": {
+                                                "type": "string"
+                                            },
+                                            "scryfallIllustrationId": {
+                                                "type": "string"
+                                            },
+                                            "scryfallOracleId": {
+                                                "type": "string"
+                                            },
+                                            "tcgplayerProductId": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    },
+                                    "keywords": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "layout": {
+                                        "type": "string"
+                                    },
+                                    "legalities": {
+                                        "type": "object",
+                                        "patternProperties": {
+                                            ".*": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    },
+                                    "manaCost": {
+                                        "type": "string"
+                                    },
+                                    "manaValue": {
+                                        "type": "number"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "number": {
+                                        "type": "string"
+                                    },
+                                    "originalText": {
+                                        "type": "string"
+                                    },
+                                    "originalType": {
+                                        "type": "string"
+                                    },
+                                    "power": {
+                                        "type": "string"
+                                    },
+                                    "printings": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "purchaseUrls": {
+                                        "type": "object",
+                                        "properties": {
+                                            "cardKingdom": {
+                                                "type": "string"
+                                            },
+                                            "cardKingdomFoil": {
+                                                "type": "string"
+                                            },
+                                            "cardmarket": {
+                                                "type": "string"
+                                            },
+                                            "tcgplayer": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    },
+                                    "rarity": {
+                                        "type": "string"
+                                    },
+                                    "rulings": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "date": {
+                                                    "type": "string",
+                                                    "format": "date"
+                                                },
+                                                "text": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "date",
+                                                "text"
+                                            ],
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "setCode": {
+                                        "type": "string"
+                                    },
+                                    "sourceProducts": {
+                                        "type": "object",
+                                        "properties": {
+                                            "foil": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "nonfoil": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    },
+                                    "subtypes": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "supertypes": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "text": {
+                                        "type": "string"
+                                    },
+                                    "toughness": {
+                                        "type": "string"
+                                    },
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "types": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "uuid": {
+                                        "type": "string"
+                                    },
+                                    "variations": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "quantity": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "required": [
+                                    "artist",
+                                    "availability",
+                                    "borderColor",
+                                    "colorIdentity",
+                                    "colors",
+                                    "convertedManaCost",
+                                    "manaValue",
+                                    "name",
+                                    "type",
+                                    "uuid",
+                                    "setCode",
+                                    "rarity",
+                                    "number"
+                                ],
+                                "additionalProperties": false
+                            }
+                        }
+                    },
+                    "required": [
+                        "block",
+                        "cards"
+                    ],
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": [
+        "meta",
+        "data"
+    ],
+    "additionalProperties": false
+}

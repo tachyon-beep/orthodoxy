@@ -1,0 +1,18 @@
+# Virtual environments
+venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+orthodoxy.egg-info/
+
+# Coverage reports
+htmlcov/
+.pytest_cache/
+.coverage
+
+# Debugging
+*.log
+output.json
